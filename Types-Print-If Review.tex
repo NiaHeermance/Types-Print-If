@@ -1,5 +1,5 @@
 \documentclass[12pt]{scrartcl}
-\input{C:/Users/Nia/Documents/Hobbies/Mathematics/Typesetting/nia_defs.tex}
+\input{NiaLatexHelpers/nia_defs.tex}
 \parskip=0.5cm
 
 \title{\vspace{-2em}Types, Print, and If Review}
@@ -100,7 +100,7 @@ What about for this program?
 \end{python}
 Because we use $=$ for the assignment operator in Python, which is setting a variable to some value, to check if a variable is equal to something, we use $==$ in programming. Here, because $8$ is not eqaul to 19, ``Not Success'' will be printed.
 
-\section{Optional Homework}
+\section{Easier Homework}
 Create a folder on your computer called \codel{If-Statements-Practice-1}. Using Sublime Text's new file feature, create multiple python programs that do the following:
 \begin{enumerate}
     \item Print the numbers 1 through 5. There's a quick way to do this you'll learn in the future, but for now, just write 5 print statements, 1 for each number.
@@ -108,5 +108,25 @@ Create a folder on your computer called \codel{If-Statements-Practice-1}. Using 
     \item Prints the result of $2 + 6.$ Your answer should not be \pythonl{print(8)} but instead should use $2$ and $6.$
 \end{enumerate}
 
-Good luck! If you aren't able to finish any of these 3, that's okay; we can talk about them next time.
+\newpage
+\section{More Challenging Homework}
+
+In the same folder, complete these problems:
+\begin{enumerate}
+    \item Set $x$ to any number you like. If $x$ is a multiple of 2, print \texttt{"x is even"} and if x is odd, print \texttt{"x is odd"}. So if you set $x = 21,$ your program would print \texttt{"21 is odd"} (not \texttt{"x is odd"}).
+    
+    To check if a number is a multiple of 2, we can use its remainder after division. The remainder of $13 \div 2$ is 1 as $2 \cdot 6 = 12$, so we need 1 more to get all the way. In Python, we can get the remainder using the $\%$ sign operator. It has a special name, but for now, call it the \textit{remainder} operator. Below are two examples to help you:
+    \begin{python}
+        if(31 % 2 == 1):
+            print("True!")
+        if (18 % 2 == 0):
+            print("Also True!")
+    \end{python}
+
+    \item Set $x$ to any number you like. Using an if statement, an if-else statement (which in python is \pythonl{elif}), and an else statement, print \texttt{"x is a  multiple of 3"} if $x$ is divisible by 3. Print \texttt{"x is 1 above"} if $x$ is one above a multiple of 3, and then print \texttt{"x is 2 above"} if $x$ is two above a multiple of 3. Is there any other cases?
+    
+    Once again, you'll need the remainder operator. But instead of \pythonl{x |\%| 2 == 0}, you'll use a different number than 2. What number?
+\end{enumerate}
+
+Good luck! We'll talk about whatever you finish next time.
 \end{document}

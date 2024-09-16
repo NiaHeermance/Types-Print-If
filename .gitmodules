@@ -1,0 +1,3 @@
+[submodule "NiaLatexHelpers"]
+	path = NiaLatexHelpers
+	url = https://github.com/NiaHeermance/NiaLatexHelpers.git
